@@ -17,7 +17,7 @@ export type Planet = {
   gravity: number;
   avgTemp: number;
   moonsCount: number;
-  moons: [string];
+  moons: string[];
 };
 
 export type Asteroid = {
@@ -27,7 +27,7 @@ export type Asteroid = {
 };
 
 export type AllData = {
-  Planets: Planet[];
+  planets: Planet[];
   Asteroids: Asteroid[];
 };
 
