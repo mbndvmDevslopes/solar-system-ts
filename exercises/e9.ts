@@ -4,7 +4,7 @@
 import { Planet } from "../data/data";
 
 export let findEarthData = (data: { planets: Planet[] }) => {
-  return data.planets.filter((planet: Planet) => planet.name === "Earth")[0];
+  return data.planets.find((planet: Planet) => planet.name === "Earth");
 };
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-9"
