@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { getPlanetNames } from "../exercises/e1";
-import { data } from "../data/data";
+import { data } from '../data/data';
 
 describe("getPlanetNames", () => {
   it("Should exist", () => {

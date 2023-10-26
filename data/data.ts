@@ -9,15 +9,15 @@ export type VolData = {
 };
 
 export type Planet = {
-  id: 'uranus';
+  id: string;
   name: string;
   isPlanet: boolean;
   mass: MassData;
   vol: VolData;
   gravity: number;
   avgTemp: number;
-  moonsCount: number;
-  moons: string[];
+  moonsCount?: number;
+  moons?: string[];
 };
 
 export type Asteroid = {
@@ -28,7 +28,7 @@ export type Asteroid = {
 
 export type AllData = {
   planets: Planet[];
-  Asteroids: Asteroid[];
+  asteroids: Asteroid[];
 };
 
 export const data = {

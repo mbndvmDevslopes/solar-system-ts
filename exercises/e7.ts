@@ -4,7 +4,7 @@
 import { Planet } from "../data/data";
 export function getPlanetsWithMoons(planets: Planet[]) {
   return planets
-    .filter((planet) => planet.moonsCount > 0)
+    .filter((planet) => planet.moonsCount! > 0)
     .map((planet) => planet.name);
 }
 

@@ -8,7 +8,6 @@ type Parameters = {
   planets: Planet[];
   moonName: string;
   moons?: string[];
-  moon: string;
 };
 
 export function findPlanetByMoon({ moonName, planets }: Parameters) {
